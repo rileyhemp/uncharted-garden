@@ -1,5 +1,6 @@
 import React from 'react';
 import MonthSelect from './MonthSelect'
+import ProduceContainer from './ProduceContainer'
 
 class App extends React.Component {
 	state = {
@@ -11,10 +12,12 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				{this.state.month}
 				<MonthSelect
 					setMonth={this.setMonth}
 					selectedMonth={this.state.month}
+				/>
+				<ProduceContainer
+					month={this.state.month}
 				/>
 			</div>
 		)

@@ -1657,7 +1657,7 @@ const Produce = {
 	},
 	"figs": {
 		"Name": "figs",
-		"Season": 8,
+		"Season": [8],
 		"Pairings": [
 			"almonds",
 			"anchovies",
@@ -2827,7 +2827,7 @@ const Produce = {
 	},
 	"raspberries": {
 		"Name": "raspberries",
-		"Season": 9,
+		"Season": [9],
 		"Pairings": [
 			"almonds",
 			"apricots",
