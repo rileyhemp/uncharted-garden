@@ -3,10 +3,10 @@ import Months from './data/Months'
 
 export default class MonthSelect extends React.Component {
 	componentDidMount() {
-		this.props.setMonth(new Date().getMonth())
+		this.props.setMonth(new Date().getMonth() + 1)
 	}
 	handleChange = (event) => {
-		this.props.setMonth(event.target.value)
+		this.props.setMonth(parseInt(event.target.value) + 1)
 	}
 	render() {
 		return (
