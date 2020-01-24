@@ -1,3 +1,5 @@
+import './css/fonts.css'
+import './css/main.css'
 import React from 'react';
 import MonthSelect from './MonthSelect'
 import ProduceContainer from './ProduceContainer'

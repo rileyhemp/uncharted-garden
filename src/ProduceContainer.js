@@ -1,8 +1,12 @@
 import React from 'react'
 import ProduceList from './data/Produce'
 import styled from 'styled-components'
+import ItemDetails from './ItemDetails'
 
-const Label = styled.figcaption``
+const Label = styled.figcaption`
+	font-size: 12px;
+	font-weight: 300;
+`
 const Image = styled.img``
 const ProduceItem = styled.figure`
 	margin: 8px;
@@ -28,6 +32,9 @@ export default class ProduceContainer extends React.Component {
 							<Label>{ProduceList[item].Name}</Label>
 						</ProduceItem> : null
 				})}
+				<ItemDetails
+					item={ProduceList['carrots']}
+				/>
 			</Container>
 		)
 	}
