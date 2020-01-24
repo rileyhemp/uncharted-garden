@@ -4,11 +4,16 @@ import styled from 'styled-components'
 
 const Label = styled.figcaption``
 const Image = styled.img``
-const ProduceItem = styled.figure``
+const ProduceItem = styled.figure`
+	margin: 8px;
+	text-align: center;
+`
 const Container = styled.div`
+	max-width: 800px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
+	margin: 8px;
 `
 
 export default class ProduceContainer extends React.Component {

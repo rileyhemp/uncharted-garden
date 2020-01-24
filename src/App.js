@@ -1,7 +1,14 @@
 import React from 'react';
 import MonthSelect from './MonthSelect'
 import ProduceContainer from './ProduceContainer'
+import styled from 'styled-components'
 import { Reset } from 'styled-reset'
+
+const Wrapper = styled.div`
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+`
 
 class App extends React.Component {
 	state = {
@@ -14,7 +21,7 @@ class App extends React.Component {
 		return (
 			<React.Fragment>
 				<Reset />
-				<div>
+				<Wrapper>
 					<MonthSelect
 						setMonth={this.setMonth}
 						selectedMonth={this.state.month}
@@ -22,7 +29,7 @@ class App extends React.Component {
 					<ProduceContainer
 						month={this.state.month}
 					/>
-				</div>
+				</Wrapper>
 			</React.Fragment>
 		)
 	}
