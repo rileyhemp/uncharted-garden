@@ -5,7 +5,11 @@ import styled from 'styled-components'
 const Label = styled.figcaption``
 const Image = styled.img``
 const ProduceItem = styled.figure``
-const Container = styled.div``
+const Container = styled.div`
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+`
 
 export default class ProduceContainer extends React.Component {
 
