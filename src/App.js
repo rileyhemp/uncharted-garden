@@ -11,6 +11,20 @@ const Wrapper = styled.div`
 	flex-flow: column nowrap;
 	align-items: center;
 `
+const H1 = styled.h1`
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #707070;
+	text-align: center;
+	margin: 40px 0 20px 0;
+`
+const Title = styled.p`
+	font-weight: 300;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin: 0 0 20px 0;
+`
 
 class App extends React.Component {
 	state = {
@@ -24,6 +38,8 @@ class App extends React.Component {
 			<React.Fragment>
 				<Reset />
 				<Wrapper>
+					<H1>Uncharted Garden</H1>
+					<Title>A voyage into seasonal produce</Title>
 					<MonthSelect
 						setMonth={this.setMonth}
 						selectedMonth={this.state.month}

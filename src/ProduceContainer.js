@@ -36,6 +36,9 @@ export default class ProduceContainer extends React.Component {
 			showCard: false
 		})
 	}
+	titleCase(str) {
+		return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(' ')
+	}
 	render() {
 		return (
 			<Container>
@@ -43,13 +46,14 @@ export default class ProduceContainer extends React.Component {
 					return ProduceList[item].Season.includes(this.props.month) ?
 						<ProduceItem key={item} onClick={() => { this.showDetails(item) }}>
 							<Image src="https://via.placeholder.com/100" />
-							<Label>{ProduceList[item].Name}</Label>
+							<Label>{this.titleCase(ProduceList[item].Name)}</Label>
 						</ProduceItem> : null
 				})}
 				<ItemDetails
 					item={ProduceList[this.state.item]}
 					showCard={this.state.showCard}
 					closeCard={this.closeDetails}
+					titleCase={this.titleCase}
 				/>
 			</Container>
 		)

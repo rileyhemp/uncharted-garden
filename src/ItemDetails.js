@@ -33,34 +33,31 @@ const H3 = styled(H2)`
 const List = styled.ul`
 	display: flex;
 	flex-wrap: wrap;
-	width: 70%;
+	width: 300px;
 	margin: auto;
 `
 const Pairing = styled.li`
 	width: 50%;
 	margin: 6px 0;
-	transform: translateX(20px);
 	font-weight: 300;
 	font-size: 14px;
 `
 
 export default class ItemDetails extends React.Component {
 	render() {
-		{
-			if (this.props.showCard) {
-				return (
-					<Card onClick={this.props.closeCard}>
-						<H1>{this.props.item.Name}</H1>
-						<H2>Preparation Recommendations</H2>
-						<H3>Pairings</H3>
-						<List>
-							{this.props.item.Pairings.map((item) => {
-								return <Pairing>{item}</Pairing>
-							})}
-						</List>
-					</Card>
-				)
-			} else return null
-		}
+		if (this.props.showCard) {
+			return (
+				<Card onClick={this.props.closeCard}>
+					<H1>{this.props.item.Name}</H1>
+					{/* <H2>Preparation Recommendations</H2> */}
+					<H3>Pairings</H3>
+					<List>
+						{this.props.item.Pairings.map((item) => {
+							return <Pairing key={item}>{this.props.titleCase(item)}</Pairing>
+						})}
+					</List>
+				</Card>
+			)
+		} else return null
 	}
 }
