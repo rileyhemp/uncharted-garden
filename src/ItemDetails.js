@@ -22,24 +22,45 @@ const H1 = styled.h1`
 	margin: 30px;
 	letter-spacing: 1px;
 `
-
 const H2 = styled(H1)`
 	font-size: 15px;
 	font-weight: 500;
 `
-
 const H3 = styled(H2)`
 	text-transform: none;
+	margin-bottom: 12px;
+`
+const List = styled.ul`
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: auto;
+`
+const Pairing = styled.li`
+	width: 50%;
+	margin: 6px 0;
+	transform: translateX(20px);
+	font-weight: 300;
+	font-size: 14px;
 `
 
 export default class ItemDetails extends React.Component {
 	render() {
-		return (
-			<Card>
-				<H1>{this.props.item.Name}</H1>
-				<H2>Preparation Recommendations</H2>
-				<H3>Pairings</H3>
-			</Card>
-		)
+		{
+			if (this.props.showCard) {
+				return (
+					<Card onClick={this.props.closeCard}>
+						<H1>{this.props.item.Name}</H1>
+						<H2>Preparation Recommendations</H2>
+						<H3>Pairings</H3>
+						<List>
+							{this.props.item.Pairings.map((item) => {
+								return <Pairing>{item}</Pairing>
+							})}
+						</List>
+					</Card>
+				)
+			} else return null
+		}
 	}
 }

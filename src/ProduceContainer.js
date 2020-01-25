@@ -21,19 +21,35 @@ const Container = styled.div`
 `
 
 export default class ProduceContainer extends React.Component {
-
+	state = {
+		item: '',
+		showCard: false
+	}
+	showDetails(item) {
+		this.setState({
+			item: item,
+			showCard: true
+		})
+	}
+	closeDetails = () => {
+		this.setState({
+			showCard: false
+		})
+	}
 	render() {
 		return (
 			<Container>
 				{Object.keys(ProduceList).map((item) => {
 					return ProduceList[item].Season.includes(this.props.month) ?
-						<ProduceItem key={item}>
+						<ProduceItem key={item} onClick={() => { this.showDetails(item) }}>
 							<Image src="https://via.placeholder.com/100" />
 							<Label>{ProduceList[item].Name}</Label>
 						</ProduceItem> : null
 				})}
 				<ItemDetails
-					item={ProduceList['carrots']}
+					item={ProduceList[this.state.item]}
+					showCard={this.state.showCard}
+					closeCard={this.closeDetails}
 				/>
 			</Container>
 		)
