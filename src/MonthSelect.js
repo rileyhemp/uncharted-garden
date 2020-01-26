@@ -19,6 +19,7 @@ export default class MonthSelect extends React.Component {
 			// </select>
 			<InfiniteSlider
 				startingIndex={this.props.selectedMonth}
+				{...this.props}
 			>
 				{Months.map(month => { return <h1 key={month.value}>{month.name}</h1> })}
 			</InfiniteSlider >

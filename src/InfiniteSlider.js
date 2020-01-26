@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const activeState = `
 	transform: translateX(0%);
-	z-index: 2;
 	opacity: 1;
 `
 
@@ -24,7 +23,7 @@ const Wrapper = styled.div`
 	width: 150px;
 	overflow: hidden;
 	position: relative;
-	`
+`
 const Slide = styled.div`
 		display: inline-block;
 		width: 100%;
@@ -37,7 +36,7 @@ const Slide = styled.div`
 			props.position === 'next' ? nextState :
 				props.position === 'previous' ? previousState : null
 	}}
-	`
+`
 
 export default class InfiniteSlider extends React.Component {
 	state = {
@@ -45,11 +44,11 @@ export default class InfiniteSlider extends React.Component {
 		slides: this.props.children
 	}
 	changeIndex = (value) => {
-		if (this.state.index === 0 && value < 0) this.setState({ index: this.state.slides.length - 1 })
-		else if (this.state.index === this.state.slides.length - 1 && value > 0) this.setState({ index: 0 })
-		else this.setState(prevState => ({
-			index: prevState.index + value
-		}))
+		let newIndex
+		if (this.state.index === 0 && value < 0) newIndex = this.state.slides.length - 1
+		else if (this.state.index === this.state.slides.length - 1 && value > 0) newIndex = 0
+		else newIndex = this.state.index + value
+		this.setState({ index: newIndex }, () => this.props.setMonth(newIndex))
 	}
 	getSlidePosition(slideKey) {
 		let index = this.state.index
