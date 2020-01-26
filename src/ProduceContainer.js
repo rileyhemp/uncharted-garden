@@ -22,12 +22,12 @@ const Container = styled.div`
 
 export default class ProduceContainer extends React.Component {
 	state = {
-		item: '',
+		selectedItem: '',
 		showCard: false
 	}
-	showDetails(item) {
+	showDetails(selectedItem) {
 		this.setState({
-			item: item,
+			selectedItem: selectedItem,
 			showCard: true
 		})
 	}
@@ -43,14 +43,14 @@ export default class ProduceContainer extends React.Component {
 		return (
 			<Container>
 				{Object.keys(ProduceList).map((item) => {
-					return ProduceList[item].Season.includes(this.props.month) ?
+					return ProduceList[item].seasons.includes(this.props.month + 1) ?
 						<ProduceItem key={item} onClick={() => { this.showDetails(item) }}>
 							<Image src="https://via.placeholder.com/100" />
-							<Label>{this.titleCase(ProduceList[item].Name)}</Label>
+							<Label>{this.titleCase(ProduceList[item].name)}</Label>
 						</ProduceItem> : null
 				})}
 				<ItemDetails
-					item={ProduceList[this.state.item]}
+					item={ProduceList[this.state.selectedItem]}
 					showCard={this.state.showCard}
 					closeCard={this.closeDetails}
 					titleCase={this.titleCase}

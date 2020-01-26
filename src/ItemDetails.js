@@ -48,11 +48,11 @@ export default class ItemDetails extends React.Component {
 		if (this.props.showCard) {
 			return (
 				<Card onClick={this.props.closeCard}>
-					<H1>{this.props.item.Name}</H1>
+					<H1>{this.props.item.name}</H1>
 					{/* <H2>Preparation Recommendations</H2> */}
-					<H3>Pairings</H3>
+					<H3>Recommended Pairings</H3>
 					<List>
-						{this.props.item.Pairings.map((item) => {
+						{this.props.item.pairings.map((item) => {
 							return <Pairing key={item}>{this.props.titleCase(item)}</Pairing>
 						})}
 					</List>

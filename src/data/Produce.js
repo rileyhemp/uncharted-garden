@@ -2,13 +2,13 @@
 // prettier-ignore
 const Produce = {
 	"apples": {
-		"Name": "apples",
-		"Season": [
+		"name": "apples",
+		"seasons": [
 			9,
 			10,
 			11
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"bacon",
@@ -77,22 +77,22 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": [
+		"good pairings": [
 			"apricots",
 			""
 		],
-		"Great Pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"apricots": {
-		"Name": "apricots",
-		"Season": [
+		"name": "apricots",
+		"seasons": [
 			5,
 			6,
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"allispice",
 			"cherries",
 			"cinnamon",
@@ -120,20 +120,20 @@ const Produce = {
 			"wine",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"artichokes": {
-		"Name": "artichokes",
-		"Season": [
+		"name": "artichokes",
+		"seasons": [
 			4,
 			5,
 			6,
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"aioli",
 			"anchovies",
 			"arugula",
@@ -190,18 +190,18 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"arugula": {
-		"Name": "arugula",
-		"Season": [
+		"name": "arugula",
+		"seasons": [
 			6,
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"basil",
 			"bell peppers",
@@ -241,18 +241,18 @@ const Produce = {
 			"watercress",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"asparagus": {
-		"Name": "asparagus",
-		"Season": [
+		"name": "asparagus",
+		"seasons": [
 			4,
 			5,
 			6
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"anchovies",
 			"artichokes",
@@ -310,17 +310,17 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"avocado": {
-		"Name": "avocado",
-		"Season": [
+		"name": "avocado",
+		"seasons": [
 			4,
 			5
 		],
-		"Pairings": [
+		"pairings": [
 			"arugula",
 			"bacon",
 			"basil",
@@ -372,19 +372,19 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"beets": {
-		"Name": "beets",
-		"Season": [
+		"name": "beets",
+		"seasons": [
 			7,
 			8,
 			9,
 			10
 		],
-		"Pairings": [
+		"pairings": [
 			"apples",
 			"arugula",
 			"avocado",
@@ -458,13 +458,13 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"bell peppers": {
-		"Name": "bell peppers",
-		"Season": [
+		"name": "bell peppers",
+		"seasons": [
 			6,
 			7,
 			8,
@@ -472,7 +472,7 @@ const Produce = {
 			10,
 			11
 		],
-		"Pairings": [
+		"pairings": [
 			"anchovies",
 			"anise",
 			"arugula",
@@ -539,17 +539,17 @@ const Produce = {
 			"zucchini",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"blackberries": {
-		"Name": "blackberries",
-		"Season": [
+		"name": "blackberries",
+		"seasons": [
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"apples",
 			"apricots",
@@ -591,18 +591,18 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"blueberries": {
-		"Name": "blueberries",
-		"Season": [
+		"name": "blueberries",
+		"seasons": [
 			6,
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"apples",
@@ -652,13 +652,13 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"broccoli": {
-		"Name": "broccoli",
-		"Season": [
+		"name": "broccoli",
+		"seasons": [
 			1,
 			2,
 			3,
@@ -667,7 +667,7 @@ const Produce = {
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"anchovies",
 			"basil",
@@ -705,13 +705,13 @@ const Produce = {
 			"vinaigrette",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"broccolini": {
-		"Name": "broccolini",
-		"Season": [
+		"name": "broccolini",
+		"seasons": [
 			1,
 			2,
 			3,
@@ -719,7 +719,7 @@ const Produce = {
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"basil",
 			"cheese",
@@ -735,20 +735,20 @@ const Produce = {
 			"tomatoes",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"brussels sprouts": {
-		"Name": "brussels sprouts",
-		"Season": [
+		"name": "brussels sprouts",
+		"seasons": [
 			10,
 			11,
 			12,
 			1,
 			2
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"apple cider",
 			"apples",
@@ -791,20 +791,20 @@ const Produce = {
 			"water chestnuts",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"butternut squash": {
-		"Name": "butternut squash",
-		"Season": [
+		"name": "butternut squash",
+		"seasons": [
 			1,
 			2,
 			10,
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"anchovies",
 			"apples",
@@ -882,20 +882,20 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"carrots": {
-		"Name": "carrots",
-		"Season": [
+		"name": "carrots",
+		"seasons": [
 			6,
 			7,
 			8,
 			9,
 			10
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"anise",
@@ -958,20 +958,20 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"cauliflower": {
-		"Name": "cauliflower",
-		"Season": [
+		"name": "cauliflower",
+		"seasons": [
 			8,
 			9,
 			10,
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"anchovies",
 			"apples",
 			"bay leaf",
@@ -1028,13 +1028,13 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"celery root": {
-		"Name": "celery root",
-		"Season": [
+		"name": "celery root",
+		"seasons": [
 			1,
 			2,
 			3,
@@ -1042,7 +1042,7 @@ const Produce = {
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"apples",
 			"basil",
@@ -1095,17 +1095,17 @@ const Produce = {
 			"wild rice",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"chard": {
-		"Name": "chard",
-		"Season": [
+		"name": "chard",
+		"seasons": [
 			10,
 			11
 		],
-		"Pairings": [
+		"pairings": [
 			"anchovies",
 			"bacon",
 			"basil",
@@ -1142,17 +1142,17 @@ const Produce = {
 			"vinagar",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"cherries": {
-		"Name": "cherries",
-		"Season": [
+		"name": "cherries",
+		"seasons": [
 			6,
 			7
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"amaretto",
@@ -1214,19 +1214,19 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"collard greens": {
-		"Name": "collard greens",
-		"Season": [
+		"name": "collard greens",
+		"seasons": [
 			1,
 			2,
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"apple cider vinegar",
 			"bacon",
 			"black-eyed pease",
@@ -1243,20 +1243,20 @@ const Produce = {
 			"tomatoes",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"corn": {
-		"Name": "corn",
-		"Season": [
+		"name": "corn",
+		"seasons": [
 			5,
 			6,
 			7,
 			8,
 			9
 		],
-		"Pairings": [
+		"pairings": [
 			"bacon",
 			"basil",
 			"bay leaf",
@@ -1326,19 +1326,19 @@ const Produce = {
 			"vinaigrette",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"cranberries": {
-		"Name": "cranberries",
-		"Season": [
+		"name": "cranberries",
+		"seasons": [
 			9,
 			10,
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"apples",
@@ -1379,18 +1379,18 @@ const Produce = {
 			"white wine",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"cucumber": {
-		"Name": "cucumber",
-		"Season": [
+		"name": "cucumber",
+		"seasons": [
 			5,
 			6,
 			7
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"bell peppers",
 			"basil",
@@ -1439,18 +1439,18 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"eggplant": {
-		"Name": "eggplant",
-		"Season": [
+		"name": "eggplant",
+		"seasons": [
 			6,
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"anchovies",
 			"artichokes",
@@ -1513,17 +1513,17 @@ const Produce = {
 			"zucchini",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"fava beans": {
-		"Name": "fava beans",
-		"Season": [
+		"name": "fava beans",
+		"seasons": [
 			5,
 			6
 		],
-		"Pairings": [
+		"pairings": [
 			"bacon",
 			"basil",
 			"butter",
@@ -1570,13 +1570,13 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"fennel": {
-		"Name": "fennel",
-		"Season": [
+		"name": "fennel",
+		"seasons": [
 			1,
 			2,
 			3,
@@ -1584,7 +1584,7 @@ const Produce = {
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"amse",
 			"apples",
@@ -1651,14 +1651,14 @@ const Produce = {
 			"zucchini",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"figs": {
-		"Name": "figs",
-		"Season": [8],
-		"Pairings": [
+		"name": "figs",
+		"seasons": [8],
+		"pairings": [
 			"almonds",
 			"anchovies",
 			"anise",
@@ -1719,19 +1719,19 @@ const Produce = {
 			"walnuts",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"kale": {
-		"Name": "kale",
-		"Season": [
+		"name": "kale",
+		"seasons": [
 			1,
 			2,
 			3,
 			4
 		],
-		"Pairings": [
+		"pairings": [
 			"bay leaf",
 			"bell peppers",
 			"butter",
@@ -1759,13 +1759,13 @@ const Produce = {
 			"vinegar",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"kiwi fruit": {
-		"Name": "kiwi fruit",
-		"Season": [
+		"name": "kiwi fruit",
+		"seasons": [
 			1,
 			2,
 			3,
@@ -1774,7 +1774,7 @@ const Produce = {
 			6,
 			7
 		],
-		"Pairings": [
+		"pairings": [
 			"bananas",
 			"berries",
 			"cherries",
@@ -1799,18 +1799,18 @@ const Produce = {
 			"wine",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"kohlrabi": {
-		"Name": "kohlrabi",
-		"Season": [
+		"name": "kohlrabi",
+		"seasons": [
 			6,
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"basil",
 			"butter",
@@ -1841,13 +1841,13 @@ const Produce = {
 			"vinegar",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"leeks": {
-		"Name": "leeks",
-		"Season": [
+		"name": "leeks",
+		"seasons": [
 			1,
 			2,
 			3,
@@ -1855,7 +1855,7 @@ const Produce = {
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"anchovies",
 			"bacon",
 			"barley",
@@ -1901,19 +1901,19 @@ const Produce = {
 			"vinaigrette",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"melon": {
-		"Name": "melon",
-		"Season": [
+		"name": "melon",
+		"seasons": [
 			6,
 			7,
 			8,
 			9
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"apricots",
 			"basil",
@@ -1960,19 +1960,19 @@ const Produce = {
 			"yuzu juice",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"oranges": {
-		"Name": "oranges",
-		"Season": [
+		"name": "oranges",
+		"seasons": [
 			1,
 			2,
 			3,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"apples",
 			"arugula",
@@ -2030,17 +2030,17 @@ const Produce = {
 			"mint",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"parsnips": {
-		"Name": "parsnips",
-		"Season": [
+		"name": "parsnips",
+		"seasons": [
 			10,
 			11
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"anise",
 			"apples",
@@ -2093,17 +2093,17 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"passion fruit": {
-		"Name": "passion fruit",
-		"Season": [
+		"name": "passion fruit",
+		"seasons": [
 			6,
 			7
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"bananas",
 			"caramel",
@@ -2136,17 +2136,17 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"peaches": {
-		"Name": "peaches",
-		"Season": [
+		"name": "peaches",
+		"seasons": [
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"apples",
@@ -2200,18 +2200,18 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"pears": {
-		"Name": "pears",
-		"Season": [
+		"name": "pears",
+		"seasons": [
 			9,
 			10,
 			11
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"anise",
@@ -2294,19 +2294,19 @@ const Produce = {
 			"wine",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"peas": {
-		"Name": "peas",
-		"Season": [
+		"name": "peas",
+		"seasons": [
 			5,
 			6,
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"arugula",
 			"asparagus",
 			"bacon",
@@ -2366,17 +2366,17 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"persimmon": {
-		"Name": "persimmon",
-		"Season": [
+		"name": "persimmon",
+		"seasons": [
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"apples",
 			"avocados",
@@ -2424,19 +2424,19 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"pineapple": {
-		"Name": "pineapple",
-		"Season": [
+		"name": "pineapple",
+		"seasons": [
 			3,
 			4,
 			5,
 			6
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"apricots",
 			"avocado",
@@ -2494,20 +2494,20 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"plums": {
-		"Name": "plums",
-		"Season": [
+		"name": "plums",
+		"seasons": [
 			6,
 			7,
 			8,
 			9,
 			10
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"apricots",
@@ -2555,20 +2555,20 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"pomegranate": {
-		"Name": "pomegranate",
-		"Season": [
+		"name": "pomegranate",
+		"seasons": [
 			9,
 			10,
 			11,
 			12,
 			1
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"almonds",
 			"arugula",
@@ -2609,13 +2609,13 @@ const Produce = {
 			"walnuts",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"potatoes": {
-		"Name": "potatoes",
-		"Season": [
+		"name": "potatoes",
+		"seasons": [
 			1,
 			2,
 			3,
@@ -2624,7 +2624,7 @@ const Produce = {
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"arugula",
 			"bacon",
 			"basil",
@@ -2694,19 +2694,19 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"pumpkin": {
-		"Name": "pumpkin",
-		"Season": [
+		"name": "pumpkin",
+		"seasons": [
 			10,
 			11,
 			12,
 			1
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"apples",
 			"bay leaf",
@@ -2769,13 +2769,13 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"radishes": {
-		"Name": "radishes",
-		"Season": [
+		"name": "radishes",
+		"seasons": [
 			4,
 			5,
 			6,
@@ -2784,7 +2784,7 @@ const Produce = {
 			9,
 			10
 		],
-		"Pairings": [
+		"pairings": [
 			"anchovies",
 			"avocados",
 			"basil",
@@ -2821,14 +2821,14 @@ const Produce = {
 			"vinaigrettes",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"raspberries": {
-		"Name": "raspberries",
-		"Season": [9],
-		"Pairings": [
+		"name": "raspberries",
+		"seasons": [9],
+		"pairings": [
 			"almonds",
 			"apricots",
 			"blackberries",
@@ -2881,19 +2881,19 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"rhubarb": {
-		"Name": "rhubarb",
-		"Season": [
+		"name": "rhubarb",
+		"seasons": [
 			4,
 			5,
 			6,
 			7
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"apples",
 			"bay leaf",
@@ -2945,20 +2945,20 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"rutabaga": {
-		"Name": "rutabaga",
-		"Season": [
+		"name": "rutabaga",
+		"seasons": [
 			1,
 			2,
 			3,
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"apples",
 			"basil",
@@ -3018,19 +3018,19 @@ const Produce = {
 			"watercress",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"spinach": {
-		"Name": "spinach",
-		"Season": [
+		"name": "spinach",
+		"seasons": [
 			5,
 			6,
 			10,
 			11
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"anchovies",
 			"apples",
@@ -3092,18 +3092,18 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"strawberries": {
-		"Name": "strawberries",
-		"Season": [
+		"name": "strawberries",
+		"seasons": [
 			5,
 			6,
 			7
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"apricots",
 			"bananas",
@@ -3161,20 +3161,20 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 1
 	},
 	"sunchokes": {
-		"Name": "sunchokes",
-		"Season": [
+		"name": "sunchokes",
+		"seasons": [
 			1,
 			2,
 			3,
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"anise",
 			"bacon",
 			"bay leaf",
@@ -3209,13 +3209,13 @@ const Produce = {
 			"vinegar",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"sweet potatoes": {
-		"Name": "sweet potatoes",
-		"Season": [
+		"name": "sweet potatoes",
+		"seasons": [
 			1,
 			8,
 			9,
@@ -3223,7 +3223,7 @@ const Produce = {
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"allspice",
 			"anise",
 			"apples",
@@ -3305,19 +3305,19 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"tomatoes": {
-		"Name": "tomatoes",
-		"Season": [
+		"name": "tomatoes",
+		"seasons": [
 			6,
 			7,
 			8,
 			9
 		],
-		"Pairings": [
+		"pairings": [
 			"aioli",
 			"allspice",
 			"almonds",
@@ -3399,13 +3399,13 @@ const Produce = {
 			"zucchini",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"turnips": {
-		"Name": "turnips",
-		"Season": [
+		"name": "turnips",
+		"seasons": [
 			1,
 			2,
 			3,
@@ -3413,7 +3413,7 @@ const Produce = {
 			11,
 			12
 		],
-		"Pairings": [
+		"pairings": [
 			"bacon",
 			"bay leaf",
 			"butter",
@@ -3441,18 +3441,18 @@ const Produce = {
 			"vinegar",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"wild mushrooms": {
-		"Name": "wild mushrooms",
-		"Season": [
+		"name": "wild mushrooms",
+		"seasons": [
 			9,
 			10,
 			11
 		],
-		"Pairings": [
+		"pairings": [
 			"almonds",
 			"asparagus",
 			"bacon",
@@ -3527,19 +3527,19 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	},
 	"zucchini": {
-		"Name": "zucchini",
-		"Season": [
+		"name": "zucchini",
+		"seasons": [
 			5,
 			6,
 			7,
 			8
 		],
-		"Pairings": [
+		"pairings": [
 			"basil",
 			"bell peppers",
 			"butter",
@@ -3588,8 +3588,8 @@ const Produce = {
 			"yogurt",
 			""
 		],
-		"Good Pairings": null,
-		"Great Pairings": null,
+		"good pairings": null,
+		"great pairings": null,
 		"isFruit": 0
 	}
 }
