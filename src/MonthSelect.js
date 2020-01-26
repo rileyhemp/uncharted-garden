@@ -1,7 +1,7 @@
 import React from 'react'
 import Months from './data/Months'
 import InfiniteSlider from './InfiniteSlider'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 export default class MonthSelect extends React.Component {
 	componentDidMount() {
@@ -21,7 +21,7 @@ export default class MonthSelect extends React.Component {
 				startingIndex={this.props.selectedMonth}
 			>
 				{Months.map(month => { return <h1 key={month.value}>{month.name}</h1> })}
-			</InfiniteSlider>
+			</InfiniteSlider >
 		)
 	}
 }
