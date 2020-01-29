@@ -12,11 +12,6 @@ export default class MonthSelect extends React.Component {
 	}
 	render() {
 		return (
-			// <select defaultValue={this.props.month} onChange={this.handleChange}>
-			// 	{Months.map((month) => (
-			// 		<option key={month.value} value={month.value}>{month.name}</option>
-			// 	))}
-			// </select>
 			<InfiniteSlider
 				startingIndex={this.props.selectedMonth}
 				{...this.props}

@@ -31,6 +31,7 @@ const Slide = styled.div`
 		position: absolute;
 		transition: all 0.3s;
 		opacity: 0;
+		z-index: -1;
 		${props => {
 		return props.position === 'active' ? activeState :
 			props.position === 'next' ? nextState :

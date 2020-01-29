@@ -53,6 +53,6 @@ class App extends React.Component {
 	}
 }
 
-
+function month_name(date) { new Date(date).toLocaleString('en-us', { month: "long" }) }
 
 export default App;
