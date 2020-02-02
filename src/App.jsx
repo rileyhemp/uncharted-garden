@@ -5,11 +5,26 @@ import MonthSelect from './MonthSelect'
 import ProduceContainer from './ProduceContainer'
 import styled from 'styled-components'
 import { Reset } from 'styled-reset'
+const background = require('./img/background.transparency.png')
+const logo = require('./img/logo.png')
 
 const Wrapper = styled.div`
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	background-image: url(${background});
+	background-position: 50%, 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+`
+const Logo = styled.div`
+	background-image: url(${logo});
+	height: 50px;
+	width: 217px;
+	margin: 32px 0 16px 0;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 `
 const H1 = styled.h1`
 	font-family: sans-serif;
@@ -38,7 +53,7 @@ class App extends React.Component {
 			<React.Fragment>
 				<Reset />
 				<Wrapper>
-					<H1>Uncharted Garden</H1>
+					<Logo />
 					<Title>A voyage into seasonal produce</Title>
 					<MonthSelect
 						setMonth={this.setMonth}

@@ -1,8 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import IconButton from '@material-ui/core/IconButton';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 const activeState = `
 	transform: translateX(0%);
@@ -10,36 +7,29 @@ const activeState = `
 `
 
 const nextState = `
-transform: translateX(60%);
+transform: translateX(100%);
 `
 
 const previousState = `
-transform: translateX(-60%);
-`
-const OuterWrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
+transform: translateX(-100%);
 `
 
-const SlideWrapper = styled.div`
+const Arrow = styled.button`
+	z-index: 100;
+`
+const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	width: 150px;
-	height: 36px;
 	overflow: hidden;
 	position: relative;
 `
-
 const Slide = styled.div`
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		display: inline-block;
 		width: 100%;
-		height: 100%;
 		text-align: center;
 		position: absolute;
-		transition: all 0.27s;
+		transition: all 0.3s;
 		opacity: 0;
 		z-index: -1;
 		${props => {
@@ -71,22 +61,13 @@ export default class InfiniteSlider extends React.Component {
 	}
 	render() {
 		return (
-			<OuterWrapper>
-				<IconButton aria-label="back" onClick={() => this.changeIndex(-1)} >
-					<ArrowBackIosIcon style={{ color: '#F0EAD5', transform: 'translateX(6px)' }} />
-				</IconButton>
-				<SlideWrapper>
-					{
-						this.state.slides ? this.state.slides.map(slide => {
-							return <Slide key={slide.key} position={this.getSlidePosition(parseInt(slide.key))}>{slide}</Slide>
-						}) : null
-					}
-				</SlideWrapper>
-				<IconButton aria-label="forward" onClick={() => this.changeIndex(+1)}>
-					<ArrowForwardIosIcon style={{ color: '#F0EAD5' }} />
-				</IconButton>
-			</OuterWrapper>
+			<Wrapper>
+				<Arrow onClick={() => this.changeIndex(-1)}>-</Arrow>
+				{this.state.slides ? this.state.slides.map(slide => {
+					return <Slide key={slide.key} position={this.getSlidePosition(parseInt(slide.key))}>{slide}</Slide>
+				}) : null}
+				<Arrow onClick={() => this.changeIndex(1)}>+</Arrow>
+			</Wrapper>
 		)
 	}
 }
-
