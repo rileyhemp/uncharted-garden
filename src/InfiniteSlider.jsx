@@ -10,11 +10,11 @@ const activeState = `
 `
 
 const nextState = `
-transform: translateX(60%);
+transform: translateX(100%);
 `
 
 const previousState = `
-transform: translateX(-60%);
+transform: translateX(-100%);
 `
 const OuterWrapper = styled.div`
 	display: flex;
@@ -32,17 +32,17 @@ const SlideWrapper = styled.div`
 `
 
 const Slide = styled.div`
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		position: absolute;
-		transition: all 0.27s;
-		opacity: 0;
-		z-index: -1;
-		${props => {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	transition: all 500ms cubic-bezier(0.740, 0.010, 0.180, 1.005);
+	opacity: 0;
+	z-index: -1;
+	${props => {
 		return props.position === 'active' ? activeState :
 			props.position === 'next' ? nextState :
 				props.position === 'previous' ? previousState : null
@@ -51,21 +51,21 @@ const Slide = styled.div`
 
 export default class InfiniteSlider extends React.Component {
 	state = {
-		index: new Date().getMonth(),
 		slides: this.props.children
 	}
 	changeIndex = (value) => {
+		let props = this.props
 		let newIndex
-		if (this.state.index === 0 && value < 0) newIndex = this.state.slides.length - 1
-		else if (this.state.index === this.state.slides.length - 1 && value > 0) newIndex = 0
-		else newIndex = this.state.index + value
-		this.setState({ index: newIndex }, () => this.props.setMonth(newIndex))
+		if (props.month === 0 && value < 0) newIndex = 11
+		else if (props.month === 11 && value > 0) newIndex = 0
+		else newIndex = props.month + value
+		this.setState({ index: newIndex }, () => this.props.changeIndex(newIndex))
 	}
-	getSlidePosition(slideKey) {
-		let index = this.state.index
-		if (slideKey == index) return 'active'
-		else if (slideKey === this.state.slides.length - 1 && index == 0) return 'previous'
-		else if (slideKey === 0 && index == this.state.slides.length - 1) return 'next'
+	getSlidePosition = (slideKey) => {
+		let index = this.props.month
+		if (slideKey === index) return 'active'
+		else if (slideKey === 11 && index === 0) return 'previous'
+		else if (slideKey === 0 && index === 11) return 'next'
 		else if (slideKey < index) return 'previous'
 		else if (slideKey > index) return 'next'
 	}
@@ -78,7 +78,7 @@ export default class InfiniteSlider extends React.Component {
 				<SlideWrapper>
 					{
 						this.state.slides ? this.state.slides.map(slide => {
-							return <Slide key={slide.key} position={this.getSlidePosition(parseInt(slide.key))}>{slide}</Slide>
+							return <Slide {...this.props} key={slide.key} position={this.getSlidePosition(parseInt(slide.key))}>{slide}</Slide>
 						}) : null
 					}
 				</SlideWrapper>

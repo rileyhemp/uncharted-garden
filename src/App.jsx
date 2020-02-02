@@ -3,6 +3,7 @@ import './css/main.css'
 import React from 'react';
 import MonthSelect from './MonthSelect'
 import ProduceContainer from './ProduceContainer'
+import Wheel from './Wheel'
 import styled from 'styled-components'
 import { Reset } from 'styled-reset'
 const background = require('./img/background.transparency.png')
@@ -26,13 +27,7 @@ const Logo = styled.div`
 	background-position: center;
 	background-repeat: no-repeat;
 `
-const H1 = styled.h1`
-	font-family: sans-serif;
-	font-size: 20px;
-	color: #707070;
-	text-align: center;
-	margin: 40px 0 20px 0;
-`
+
 const Title = styled.p`
 	font-weight: 300;
 	text-align: center;
@@ -43,10 +38,22 @@ const Title = styled.p`
 
 class App extends React.Component {
 	state = {
-		month: ''
+		month: new Date().getMonth(),
+		wheelPosition: 0
 	}
 	setMonth = (month) => {
-		this.setState({ month: month })
+		this.setState(prevState => {
+			this.moveWheel(prevState.month, month)
+			return { month: month }
+		})
+	}
+	moveWheel(from, to) {
+		let angle = this.state.wheelPosition
+		let amount = 60
+		to === 11 && from === 0 ? angle -= amount :
+			to === 0 && from === 11 ? angle += amount :
+				to > from ? angle += amount : angle -= amount
+		this.setState({ wheelPosition: angle })
 	}
 	render() {
 		return (
@@ -56,9 +63,10 @@ class App extends React.Component {
 					<Logo />
 					<Title>A voyage into seasonal produce</Title>
 					<MonthSelect
-						setMonth={this.setMonth}
-						selectedMonth={this.state.month}
+						changeIndex={this.setMonth}
+						month={this.state.month}
 					/>
+					<Wheel angle={this.state.wheelPosition} />
 					<ProduceContainer
 						month={this.state.month}
 					/>

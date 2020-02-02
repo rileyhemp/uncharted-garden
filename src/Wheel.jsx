@@ -10,6 +10,10 @@ const Image = styled.div`
 	background-repeat: no-repeat;
 	cursor: pointer;
 	margin: 16px;
+	transition: all 500ms cubic-bezier(0.740, 0.010, 0.180, 1.005);
+	transform: rotate${props => {
+		return '(' + props.angle + 'deg)'
+	}};
 `
 
 export default class Wheel extends React.Component {
@@ -21,8 +25,7 @@ export default class Wheel extends React.Component {
 	}
 	render() {
 		return (
-			<Image className="noSelect" />
-			// <img src={wheel} />
+			<Image {...this.props} className="noSelect" />
 		)
 	}
 }

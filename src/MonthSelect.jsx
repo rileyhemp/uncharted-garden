@@ -1,7 +1,6 @@
 import React from 'react'
 import Months from './data/Months'
 import InfiniteSlider from './InfiniteSlider'
-import Wheel from './Wheel'
 
 export default class MonthSelect extends React.Component {
 	handleChange = (event) => {
@@ -16,7 +15,6 @@ export default class MonthSelect extends React.Component {
 				>
 					{Months.map(month => { return <h1 style={{ fontSize: '24px' }} key={month.value}>{month.name}</h1> })}
 				</InfiniteSlider>
-				<Wheel newMonth={this.props.selectedMonth} />
 			</React.Fragment>
 		)
 	}
