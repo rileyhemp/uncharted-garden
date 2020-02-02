@@ -51,7 +51,7 @@ const Slide = styled.div`
 
 export default class InfiniteSlider extends React.Component {
 	state = {
-		index: this.props.startingIndex || 0,
+		index: new Date().getMonth(),
 		slides: this.props.children
 	}
 	changeIndex = (value) => {

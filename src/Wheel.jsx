@@ -13,6 +13,12 @@ const Image = styled.div`
 `
 
 export default class Wheel extends React.Component {
+	state = {
+		previousMonth: new Date().getMonth()
+	}
+	rotate(direction) {
+		direction === 'forwards' ? console.log('ho') : console.log('yo')
+	}
 	render() {
 		return (
 			<Image className="noSelect" />
