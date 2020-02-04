@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Months from './data/Months'
 import ProduceList from './data/Produce'
+const _ = require('lodash')
 
 const activeState = `
 transform: translateX(0%);
@@ -9,11 +10,11 @@ opacity: 1
 `
 
 const nextState = `
-transform: translateX(120%);
+transform: translateX(100%);
 `
 
 const previousState = `
-transform: translateX(-120%);
+transform: translateX(-100%);
 `
 
 
@@ -25,7 +26,6 @@ const MonthWrapper = styled.div`
 	position: absolute;
 	transition: all 500ms cubic-bezier(0.740, 0.010, 0.180, 1.005);
 	opacity: 0;
-	z-index: -1;
 	${props => {
 		return props.position === 'active' ? activeState :
 			props.position === 'next' ? nextState :
@@ -36,7 +36,10 @@ const Label = styled.figcaption`
 	font-size: 12px;
 	font-weight: 300;
 `
-const Image = styled.img``
+const Image = styled.img`
+	height: 100px;
+	position: relative;
+`
 
 const ProduceItem = styled.figure`
 	margin: 4px;
@@ -44,7 +47,9 @@ const ProduceItem = styled.figure`
 `
 const Wrapper = styled.div`
 	width: 100%;
+	height: 800px;
 	position: relative;
+	overflow: hidden;
 `
 
 export default class ItemSlider extends React.Component {
@@ -61,14 +66,14 @@ export default class ItemSlider extends React.Component {
 	}
 	render() {
 		return (
-			<Wrapper className="wrapper">
+			<Wrapper>
 				{Months.map(month => {
 					return (
-						<MonthWrapper className="Month Wrapper" key={month.value} position={this.getSlidePosition(parseInt(month.value))}>
+						<MonthWrapper key={month.value} position={this.getSlidePosition(parseInt(month.value))}>
 							{Object.keys(ProduceList).map((item) => {
 								return ProduceList[item].seasons.includes(month.value + 1) ?
 									<ProduceItem key={item} onClick={() => { this.props.showDetails(item) }}>
-										<Image src="https://via.placeholder.com/100" />
+										<Image src={require('./img/produce-images/' + _.kebabCase(ProduceList[item].name) + '.png')} />
 										<Label>{this.props.titleCase(ProduceList[item].name)}</Label>
 									</ProduceItem> : null
 							})}

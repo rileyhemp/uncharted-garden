@@ -1083,7 +1083,7 @@ const Produce = {
 			"pecans",
 			"potatoes",
 			"rice",
-			"rutabagas",
+			"rutabegas",
 			"sage",
 			"tarragon",
 			"thyme",
@@ -2673,7 +2673,7 @@ const Produce = {
 			"pork",
 			"ramps",
 			"rosemary",
-			"rutabagas",
+			"rutabegas",
 			"saffron",
 			"sage",
 			"sausages",
@@ -2949,8 +2949,8 @@ const Produce = {
 		"great pairings": null,
 		"isFruit": 1
 	},
-	"rutabaga": {
-		"name": "rutabaga",
+	"rutabega": {
+		"name": "rutabega",
 		"seasons": [
 			1,
 			2,
