@@ -28,13 +28,14 @@ const Logo = styled.div`
 	background-repeat: no-repeat;
 `
 
+
 const Title = styled.p`
 	font-weight: 300;
 	text-align: center;
 	font-size: 12px;
 	letter-spacing: 1px;
 	margin: 0 0 20px 0;
-`
+	`
 
 class App extends React.Component {
 	state = {
@@ -66,7 +67,8 @@ class App extends React.Component {
 						changeIndex={this.setMonth}
 						month={this.state.month}
 					/>
-					<Wheel angle={this.state.wheelPosition} />
+					<Wheel angle={this.state.wheelPosition} month={this.state.month} changeIndex={this.setMonth} />
+					<Title>Spin the wheel to discover what's in season!</Title>
 					<ProduceContainer
 						month={this.state.month}
 					/>

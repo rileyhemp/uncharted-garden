@@ -10,11 +10,11 @@ opacity: 1
 `
 
 const nextState = `
-transform: translateX(100%);
+transform: translateX(200%);
 `
 
 const previousState = `
-transform: translateX(-100%);
+transform: translateX(-200%);
 `
 
 
@@ -39,6 +39,7 @@ const Label = styled.figcaption`
 const Image = styled.img`
 	height: 100px;
 	position: relative;
+	cursor: pointer;
 `
 
 const ProduceItem = styled.figure`

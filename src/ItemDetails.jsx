@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const margin = 20
 const Card = styled.div`
-	position: absolute;
+	position: fixed;
 	min-height: 100vh;
 	width: 100%;
 	background-color: #FDF8E5;
