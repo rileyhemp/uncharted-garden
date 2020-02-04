@@ -8,16 +8,12 @@ const activeState = `
 transform: translateX(0%);
 opacity: 1
 `
-
 const nextState = `
 transform: translateX(200%);
 `
-
 const previousState = `
 transform: translateX(-200%);
 `
-
-
 const MonthWrapper = styled.div`
 	width: 100%;
 	display: flex;
@@ -30,18 +26,21 @@ const MonthWrapper = styled.div`
 		return props.position === 'active' ? activeState :
 			props.position === 'next' ? nextState :
 				props.position === 'previous' ? previousState : null
-	}}
+	}};
+	@media (min-width: 768px){
+		opacity: 1;
+	};
 `
 const Label = styled.figcaption`
 	font-size: 12px;
 	font-weight: 300;
+	margin: 4px;
 `
 const Image = styled.img`
 	height: 100px;
 	position: relative;
 	cursor: pointer;
 `
-
 const ProduceItem = styled.figure`
 	margin: 4px;
 	text-align: center;
@@ -51,6 +50,9 @@ const Wrapper = styled.div`
 	height: 800px;
 	position: relative;
 	overflow: hidden;
+	@media (min-width: 768px){
+		overflow: visible;
+	}
 `
 
 export default class ItemSlider extends React.Component {

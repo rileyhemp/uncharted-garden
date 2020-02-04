@@ -15,7 +15,6 @@ const Image = styled.div`
 	width: 100%;
 	background-size: contain;
 	background-repeat: no-repeat;
-	cursor: pointer;
 	position: relative;
 	transition: all 500ms cubic-bezier(0.740, 0.010, 0.180, 1.005);
 	transform: rotate${props => {
@@ -29,14 +28,11 @@ const MoveBack = styled.div`
 	width: 50%;
 	height: 100%;
 	z-index: 2;
+	cursor: pointer;
 `
-const MoveForward = styled.div`
+const MoveForward = styled(MoveBack)`
 	position:absolute;
 	left: 50%;
-	top:0;
-	width: 50%;
-	height: 100%;
-	z-index: 2;
 `
 
 export default class Wheel extends React.Component {
