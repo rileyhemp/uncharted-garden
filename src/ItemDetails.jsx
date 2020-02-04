@@ -19,17 +19,16 @@ const CardWrapper = styled.div`
 
 const Card = styled.div`
 	position: relative;
+	box-sizing: border-box;
 	overflow:scroll;
 	height: 100%;
-	width: 100%;
-	background-color: #FDF8E5;
-	border-radius: 30px;
-	padding-top: ${margin}px;
-	top: ${margin}px;
 	width: calc(100vw - ${margin * 2}px);
-	color: #161638;
-	box-sizing: border-box;
 	max-width: 800px;
+	top: ${margin}px;
+	padding-top: ${margin}px;
+	background-color: #FDF8E5;
+	color: #161638;
+	border-radius: 30px;
 	@media (min-width: 768px){
 		overflow: visible;
 		height: initial;

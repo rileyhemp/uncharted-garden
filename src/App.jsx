@@ -26,8 +26,19 @@ const Logo = styled.div`
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `
-
+const LogoText = styled.h1`
+	font-weight: 700;
+	font-size: 19px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	z-index: 1;
+	position: relative;
+`
 
 const Title = styled.p`
 	font-weight: 300;
@@ -61,7 +72,10 @@ class App extends React.Component {
 			<React.Fragment>
 				<Reset />
 				<Wrapper>
-					<Logo />
+					<Logo>
+						<LogoText>Uncharted Garden</LogoText>
+					</Logo>
+
 					<Title>A voyage into seasonal produce</Title>
 					<MonthSelect
 						changeIndex={this.setMonth}
