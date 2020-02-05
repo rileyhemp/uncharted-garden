@@ -19,12 +19,13 @@ const P = styled.p`
 	font-weight: 300;
 	margin: 0 16px 8px 16px;
 	padding: 0 16px;
+	letter-spacing: 1px;
 `
 
 const Footer = (props) => {
 	return (
 		<Container>
-			<P>Copyright 2020 Uncharted Garden</P>
+			<P>Made with ❤️ + ☕ at The Creative Circus, 2020</P>
 			<P>Data Source: The Flavor Bible, Dornenburg and Page</P>
 		</Container>
 	)

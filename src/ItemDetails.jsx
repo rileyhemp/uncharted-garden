@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import Techniques from './data/Techniques'
 
 const margin = 20
 const CardWrapper = styled.div`
@@ -39,24 +40,25 @@ const H1 = styled.h1`
 	font-size: 18px;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 30px ;
+	margin: 30px 30px 10px 30px;
 	letter-spacing: 1px;
 `
 const H2 = styled(H1)`
 	font-size: 15px;
 	font-weight: 500;
-	text-align: left;
-	margin-left: 40px;
+	margin: 30px 10px 0 10px;
 `
 const H3 = styled(H2)`
 	text-transform: none;
 	margin-bottom: 12px;
+	text-align: left;
+	margin: 10px 30px;
 `
 const List = styled.ul`
 	display: block;
 	columns: 2;
 	width: 100%;
-	padding: 0 20px 0 40px;
+	padding: 0 20px 0 30px;
 	box-sizing: border-box;
 	margin-bottom: 80px;
 	@media (min-width: 768px){
@@ -82,6 +84,30 @@ const CloseButtonContainer = styled.div`
 	}
 `
 
+const TechniquesContainer = styled.div`
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
+`
+
+const Image = styled.img`
+	height: 60px;
+`
+
+const Caption = styled.figcaption`
+	text-align: center;
+	font-size: 11px;
+	font-weight: 300;
+	transform: translateY(-3px);
+`
+
+const Technique = styled.figure`
+	margin: 4px;
+`
+
 
 export default class ItemDetails extends React.Component {
 	render() {
@@ -95,7 +121,17 @@ export default class ItemDetails extends React.Component {
 							</IconButton>
 						</CloseButtonContainer>
 						<H1>{this.props.item.name}</H1>
-						{/* <H2>Preparation Recommendations</H2> */}
+						<H2>Preparation Recommendations</H2>
+						<TechniquesContainer>
+							{this.props.item.preparations.map(technique => {
+								return (
+									<Technique key={technique - 1}>
+										<Image src={require('./img/prep-icons/' + Techniques[technique - 1] + '.png')} />
+										<Caption>{this.props.titleCase(Techniques[technique - 1])}</Caption>
+									</Technique>
+								)
+							})}
+						</TechniquesContainer>
 						<H3>Recommended Pairings</H3>
 						<List>
 							{this.props.item.pairings.map((item) => {
