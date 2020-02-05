@@ -54,25 +54,32 @@ const H3 = styled(H2)`
 `
 const List = styled.ul`
 	display: block;
-	columns: 1;
+	columns: 2;
 	width: 100%;
-	margin-left: 40px;
+	padding: 0 20px 0 40px;
+	box-sizing: border-box;
 	margin-bottom: 80px;
 	@media (min-width: 768px){
-		columns: 2;
+		columns: 4;
 	}
 `
 const Pairing = styled.li`
-	width: 50%;
+	width: 100%;
 	display: inline-block;
 	margin: 6px 0;
 	font-weight: 300;
 	font-size: 14px;
+	line-height: 1.25;
 `
-const CloseButton = styled.div`
-	position: absolute;
-	right: 8px;
-	top: 4px;
+const CloseButtonContainer = styled.div`
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	@media (min-width: 768px){
+		position: absolute;
+		top: 8px;
+		right: 8px;
+	}
 `
 
 
@@ -82,11 +89,11 @@ export default class ItemDetails extends React.Component {
 			return (
 				<CardWrapper>
 					<Card onClick={this.props.closeCard}>
-						<CloseButton>
+						<CloseButtonContainer>
 							<IconButton aria-label="close">
 								<CloseIcon fontSize="large" />
 							</IconButton>
-						</CloseButton>
+						</CloseButtonContainer>
 						<H1>{this.props.item.name}</H1>
 						{/* <H2>Preparation Recommendations</H2> */}
 						<H3>Recommended Pairings</H3>

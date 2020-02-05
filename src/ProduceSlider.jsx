@@ -27,9 +27,6 @@ const MonthWrapper = styled.div`
 			props.position === 'next' ? nextState :
 				props.position === 'previous' ? previousState : null
 	}};
-	@media (min-width: 768px){
-		opacity: 1;
-	};
 `
 const Label = styled.figcaption`
 	font-size: 12px;
@@ -47,18 +44,20 @@ const ProduceItem = styled.figure`
 `
 const Wrapper = styled.div`
 	width: 100%;
-	height: ${props => props.slideHeights[props.month] + 80}px;
+	height: 1170px;
 	position: relative;
-	overflow: hidden;
-	@media (min-width: 768px){
+	overflow: visible;
+	margin-bottom: 40px;
+	@media(min-width: 768px){
+		height: 650px;
+	}
+	@media (min-width: 1024px){
 		overflow: visible;
+		height: 520px;
 	}
 `
 
-export default class ItemSlider extends React.Component {
-	state = {
-		slideHeights: [780, 650, 650, 520, 780, 1170, 1040, 910, 780, 1040, 1170, 910]
-	}
+export default class ProduceSlider extends React.Component {
 	getSlidePosition(slideKey) {
 		let index = this.props.month
 		if (slideKey === index) return 'active'
@@ -69,10 +68,10 @@ export default class ItemSlider extends React.Component {
 	}
 	render() {
 		return (
-			<Wrapper month={this.props.month} slideHeights={this.state.slideHeights}>
+			<Wrapper>
 				{Months.map(month => {
 					return (
-						<MonthWrapper key={month.value} position={this.getSlidePosition(parseInt(month.value))}>
+						<MonthWrapper className={'slide-' + (month.value + 1)} key={month.value} position={this.getSlidePosition(parseInt(month.value))}>
 							{Object.keys(ProduceList).map((item) => {
 								return ProduceList[item].seasons.includes(month.value + 1) ?
 									<ProduceItem key={item} onClick={() => { this.props.showDetails(item) }}>

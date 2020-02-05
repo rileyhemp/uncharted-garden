@@ -4,6 +4,7 @@ import React from 'react';
 import MonthSelect from './MonthSelect'
 import ProduceContainer from './ProduceContainer'
 import Wheel from './Wheel'
+import Footer from './Footer'
 import styled from 'styled-components'
 import { Reset } from 'styled-reset'
 const background = require('./img/background.transparency.png')
@@ -14,9 +15,11 @@ const Wrapper = styled.div`
 	flex-flow: column nowrap;
 	align-items: center;
 	background-image: url(${background});
-	background-position: 50%, 100%;
+	background-position: 50%, 50%;
 	background-size: cover;
+	background-attachment:fixed;
 	background-repeat: no-repeat;
+	overflow: hidden;
 `
 const Logo = styled.div`
 	background-image: url(${logo});
@@ -69,7 +72,7 @@ class App extends React.Component {
 	}
 	render() {
 		return (
-			<React.Fragment>
+			<div>
 				<Reset />
 				<Wrapper>
 					<Logo>
@@ -87,7 +90,8 @@ class App extends React.Component {
 						month={this.state.month}
 					/>
 				</Wrapper>
-			</React.Fragment>
+				<Footer />
+			</div>
 		)
 	}
 }
