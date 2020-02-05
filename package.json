@@ -1,7 +1,7 @@
 {
 	"name": "uncharted-garden",
+	"homepage": "http://circuslabs.net/~riley.hemphill/Uncharted%20Garden/",
 	"version": "1.0.0",
-	"homepage": "http://circuslabs.net/~riley.hemphill/Seasonal%20Produce%20PWA/week-4",
 	"private": true,
 	"dependencies": {
 		"@material-ui/core": "^4.9.0",

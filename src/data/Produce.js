@@ -791,7 +791,7 @@ const Produce = {
 			"almonds",
 			"apple cider",
 			"apples",
-			"BACON",
+			"bacon",
 			"basil",
 			"bay leaf",
 			"bread crumbs",
