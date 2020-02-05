@@ -47,7 +47,7 @@ const ProduceItem = styled.figure`
 `
 const Wrapper = styled.div`
 	width: 100%;
-	height: 800px;
+	height: ${props => props.slideHeights[props.month] + 80}px;
 	position: relative;
 	overflow: hidden;
 	@media (min-width: 768px){
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
 
 export default class ItemSlider extends React.Component {
 	state = {
-		slides: this.props.children
+		slideHeights: [780, 650, 650, 520, 780, 1170, 1040, 910, 780, 1040, 1170, 910]
 	}
 	getSlidePosition(slideKey) {
 		let index = this.props.month
@@ -69,7 +69,7 @@ export default class ItemSlider extends React.Component {
 	}
 	render() {
 		return (
-			<Wrapper>
+			<Wrapper month={this.props.month} slideHeights={this.state.slideHeights}>
 				{Months.map(month => {
 					return (
 						<MonthWrapper key={month.value} position={this.getSlidePosition(parseInt(month.value))}>
