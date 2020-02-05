@@ -1813,6 +1813,7 @@ const Produce = {
 			4
 		],
 		"preparations": [
+			1, 6, 7
 		],
 		"pairings": [
 			"bay leaf",
@@ -1858,6 +1859,7 @@ const Produce = {
 			7
 		],
 		"preparations": [
+			5
 		],
 		"pairings": [
 			"bananas",
@@ -1896,6 +1898,7 @@ const Produce = {
 			8
 		],
 		"preparations": [
+			1, 6, 7
 		],
 		"pairings": [
 			"allspice",
@@ -1943,6 +1946,7 @@ const Produce = {
 			12
 		],
 		"preparations": [
+			1, 2, 3, 4, 7
 		],
 		"pairings": [
 			"anchovies",
@@ -2003,6 +2007,7 @@ const Produce = {
 			9
 		],
 		"preparations": [
+			5
 		],
 		"pairings": [
 			"almonds",
@@ -2064,6 +2069,7 @@ const Produce = {
 			12
 		],
 		"preparations": [
+			1, 5
 		],
 		"pairings": [
 			"almonds",
@@ -2134,6 +2140,7 @@ const Produce = {
 			11
 		],
 		"preparations": [
+			1, 2, 3, 4, 7
 		],
 		"pairings": [
 			"allspice",
@@ -2199,6 +2206,7 @@ const Produce = {
 			7
 		],
 		"preparations": [
+			5
 		],
 		"pairings": [
 			"almonds",
@@ -2244,6 +2252,7 @@ const Produce = {
 			8
 		],
 		"preparations": [
+			2, 4, 5, 6
 		],
 		"pairings": [
 			"allspice",
@@ -2311,6 +2320,7 @@ const Produce = {
 			11
 		],
 		"preparations": [
+			1, 2, 4, 5, 6
 		],
 		"pairings": [
 			"allspice",
@@ -2408,6 +2418,7 @@ const Produce = {
 			8
 		],
 		"preparations": [
+			1, 6, 7
 		],
 		"pairings": [
 			"arugula",
@@ -2480,6 +2491,7 @@ const Produce = {
 			12
 		],
 		"preparations": [
+			2, 5
 		],
 		"pairings": [
 			"almonds",
@@ -2542,6 +2554,7 @@ const Produce = {
 			6
 		],
 		"preparations": [
+			2, 4, 5, 6
 		],
 		"pairings": [
 			"allspice",
@@ -2615,6 +2628,7 @@ const Produce = {
 			10
 		],
 		"preparations": [
+			1, 2, 5
 		],
 		"pairings": [
 			"allspice",
@@ -2678,6 +2692,7 @@ const Produce = {
 			1
 		],
 		"preparations": [
+			5
 		],
 		"pairings": [
 			"allspice",
@@ -2736,6 +2751,7 @@ const Produce = {
 			12
 		],
 		"preparations": [
+			1, 2, 3, 4, 6, 7
 		],
 		"pairings": [
 			"arugula",
@@ -2820,6 +2836,7 @@ const Produce = {
 			1
 		],
 		"preparations": [
+			1, 2, 4
 		],
 		"pairings": [
 			"allspice",
@@ -2900,6 +2917,7 @@ const Produce = {
 			10
 		],
 		"preparations": [
+			5
 		],
 		"pairings": [
 			"anchovies",
@@ -2946,6 +2964,7 @@ const Produce = {
 		"name": "raspberries",
 		"seasons": [9],
 		"preparations": [
+			5
 		],
 		"pairings": [
 			"almonds",
@@ -3013,6 +3032,7 @@ const Produce = {
 			7
 		],
 		"preparations": [
+			1, 2, 6
 		],
 		"pairings": [
 			"almonds",
@@ -3080,6 +3100,7 @@ const Produce = {
 			12
 		],
 		"preparations": [
+			1, 2, 3, 7
 		],
 		"pairings": [
 			"allspice",
@@ -3154,6 +3175,7 @@ const Produce = {
 			11
 		],
 		"preparations": [
+			1, 5, 6, 7
 		],
 		"pairings": [
 			"almonds",
@@ -3229,6 +3251,7 @@ const Produce = {
 			7
 		],
 		"preparations": [
+			5, 6
 		],
 		"pairings": [
 			"almonds",
@@ -3302,6 +3325,7 @@ const Produce = {
 			12
 		],
 		"preparations": [
+			1, 2, 3, 6
 		],
 		"pairings": [
 			"anise",
@@ -3353,6 +3377,7 @@ const Produce = {
 			12
 		],
 		"preparations": [
+			1, 2, 3, 4, 6, 7
 		],
 		"pairings": [
 			"allspice",
@@ -3449,6 +3474,7 @@ const Produce = {
 			9
 		],
 		"preparations": [
+			2, 3, 4, 5, 6
 		],
 		"pairings": [
 			"aioli",
@@ -3547,6 +3573,7 @@ const Produce = {
 			12
 		],
 		"preparations": [
+			1, 2, 3, 7
 		],
 		"pairings": [
 			"bacon",
@@ -3588,6 +3615,7 @@ const Produce = {
 			11
 		],
 		"preparations": [
+			2, 3, 4, 6, 7
 		],
 		"pairings": [
 			"almonds",
@@ -3677,6 +3705,7 @@ const Produce = {
 			8
 		],
 		"preparations": [
+			2, 3, 4, 6
 		],
 		"pairings": [
 			"basil",
